@@ -1,6 +1,6 @@
 # BỘ HỒ SƠ PHÂN TÍCH DỰ ÁN CẢI TIẾN QUẢN TRỊ BỆNH VIỆN — FMFT AIOS/LSE
 ## ĐỀ ÁN 2: SHIN AIOS DASHBOARD — TRUNG TÂM ĐIỀU HÀNH THÔNG MINH, LIÊN THÔNG KPI 3 CẤP & CẢNH BÁO SỚM (EWS)
-### Đơn vị thực hiện: Hệ thống Y tế Thanh Vũ Medic — NHÓM 8 (Cơ sở 3: PKĐK Thanh Vũ Medic Cà Mau)
+### Đơn vị thực hiện: Hệ thống Y tế Thanh Vũ Medic — Cơ sở 3 — PKĐK Thanh Vũ Medic Cà Mau
 ### Mã định danh dự án: TV3-AIOS-02 | Phiên bản: 2.0 (Tháng 11/2026)
 
 ---
@@ -17,7 +17,7 @@
 
 | Trường theo biểu mẫu | Nội dung chi tiết cho Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau) |
 |:---|:---|
-| **Tên bệnh viện và nhóm** | - **Hệ thống Y tế Thanh Vũ Medic — NHÓM 8**<br/>- **Cơ sở thực hiện:** Cơ sở 3 — Phòng khám Đa khoa Thanh Vũ Medic Cà Mau.<br/>- **Thành phần tham gia:** Liên phòng ban: Phòng PTKH, Phòng TCNS, Phòng TCKT, Phòng KHTH, Ban Kiểm Soát & Ban Giám Đốc CS3. |
+| **Tên bệnh viện và nhóm** | - **Hệ thống Y tế Thanh Vũ Medic**<br/>- **Cơ sở thực hiện:** Cơ sở 3 — Phòng khám Đa khoa Thanh Vũ Medic Cà Mau.<br/>- **Thành phần tham gia:** Liên phòng ban: Phòng PTKH, Phòng TCNS, Phòng TCKT, Phòng KHTH, Ban Kiểm Soát & Ban Giám Đốc CS3. |
 | **Quy trình và phạm vi vận hành** | - Quy trình xếp lịch làm việc, quản lý chấm công, gửi và phê duyệt báo cáo tác nghiệp ngày của 26 khoa/phòng/bộ phận.<br/>- Quy trình tổng hợp, tính điểm Hoàn thành nhiệm vụ (HTNV) và đánh giá chỉ số KPI 3 cấp (Toàn viện $\rightarrow$ Khoa/Phòng $\rightarrow$ Nhân viên).<br/>- Quy trình giám sát vận hành và cảnh báo sớm sự cố/điểm nghẽn trên toàn phòng khám. |
 | **Ngày lập và người chủ trì** | - **Ngày lập đề án:** Ngày 28 tháng 10 năm 2026 (Cập nhật phiên bản hoàn thiện: Ngày 04 tháng 11 năm 2026).<br/>- **Chủ nhiệm đề án:** **Huỳnh Tấn Kiệt** (KHTH CS3).<br/>- **Đồng chủ nhiệm & Điều phối:** **Nguyễn Kim Nhang** (TCNS CS2 · Nhóm trưởng Nhóm 8).<br/>- **Kiến trúc Dữ liệu & Kỹ thuật:** **Huỳnh Trường Thanh Tâm** (PTKH CS3).<br/>- **Đại diện Nhân sự & Kế toán:** **Trần Trúc Linh** (TCNS), **Nguyễn Như Ý** (TCKT). |
 | **Vấn đề quan sát được, khoảng thời gian, quy mô và tác động** | - **Vấn đề quan sát được:** Tình trạng **cát cứ thông tin, phân mảnh dữ liệu vận hành trên 26 file Excel rời rạc** và lãng phí thời gian báo cáo thủ công gây trễ nhịp điều hành nghiêm trọng tại Cơ sở 3.<br/>- **Khoảng thời gian phát sinh:** Diễn ra liên tục hàng ngày (khâu báo cáo ca trực) và dồn cục bộ nghiêm trọng vào các ngày 01 đến 05 hàng tháng (khâu chốt số liệu KPI và tính lương).<br/>- **Quy mô hiện trạng thực tế:**<br/>  + Gần **200 nhân sự** trực thuộc 26 khoa/phòng/bộ phận tại Cơ sở 3.<br/>  + **Lịch làm việc:** Quản lý bằng bảng tính Excel ma trận thủ công (>365 cột), thường xuyên phát sinh xung đột ca trực, nhân viên không thể tra cứu lịch cá nhân trên điện thoại di động.<br/>  + **Báo cáo tác nghiệp ngày:** Sử dụng Google Form rời rạc với hơn 70 trường thông tin, nhân viên thao tác nhầm lẫn, mất trung bình 45–60 phút/ngày/khoa để tổng hợp.<br/>  + **Đánh giá KPI & HTNV:** Thực hiện thủ công trên 26 file Excel độc lập. Cuối tháng, bộ phận TCNS và KHTH mất **3–5 ngày công** chỉ để cộng gộp điểm số. Dữ liệu đánh giá có độ trễ lớn (chậm từ 5–7 ngày so với thực tế), thiếu tính minh chứng và dễ dẫn đến tranh cãi cảm tính.<br/>- **Các lãng phí Lean (Muda) xác định:**<br/>  1. *Lãng phí Chờ đợi (Waiting):* Ban Giám Đốc phải đợi đến ngày 05–07 tháng sau mới có báo cáo hiệu suất tổng thể của tháng trước.<br/>  2. *Lãng phí Thao tác thừa (Over-processing):* Nhân viên nhập dữ liệu 2–3 lần (ghi sổ tay $\rightarrow$ nhập Google Form $\rightarrow$ chép sang Excel tổng hợp).<br/>  3. *Lãng phí Sai sót (Defects):* Sai lệch công thức Excel, lệch mã nhân viên, thất thoát phiếu đánh giá hoàn thành nhiệm vụ (HTNV).<br/>  4. *Lãng phí Tiềm năng con người (Underutilized Talent):* Đội ngũ quản lý cấp trung (lãnh đạo các khoa/phòng) dành 20–30% quỹ thời gian để làm "hành chính sổ sách" thay vì tập trung nâng cao chuyên môn và cải tiến trải nghiệm người bệnh. |
@@ -88,7 +88,7 @@ flowchart TD
 
 ### 1. Ma trận trách nhiệm RACI liên phòng ban
 
-| Quy trình / Tác vụ quản trị | BGĐ Cơ sở 3 | Chuyên môn (Tấn Kiệt) | Nhóm 8 (Kim Nhang) | Kiến trúc AIOS (Thanh Tâm) | Trưởng các Khoa/Phòng | Toàn thể Nhân viên |
+| Quy trình / Tác vụ quản trị | BGĐ Cơ sở 3 | Chuyên môn (Tấn Kiệt) | TCNS CS3 (Trúc Linh) | Kiến trúc AIOS (Thanh Tâm) | Trưởng các Khoa/Phòng | Toàn thể Nhân viên |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1. Ban hành Bộ chỉ tiêu & Ngưỡng KPI 3 cấp | **A** | R | C | C | C | I |
 | 2. Thiết kế kiến trúc Hệ thống & Cơ sở dữ liệu | I | C | C | **R / A** | C | I |
@@ -192,4 +192,4 @@ flowchart TD
 ```
 
 ---
-*Hồ sơ hoàn thiện ngày 04 tháng 11 năm 2026 bởi Nhóm 8 — PKĐK Thanh Vũ Medic Cà Mau.*
+*Hồ sơ hoàn thiện ngày 04 tháng 11 năm 2026 bởi Tập thể Cán bộ Cơ sở 3 — PKĐK Thanh Vũ Medic Cà Mau.*

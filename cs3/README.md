@@ -1,10 +1,10 @@
-# HỒ SƠ BÀI TẬP QUẢN TRỊ BỆNH VIỆN FMFT AIOS/LSE — NHÓM 8 (CS3)
+# HỒ SƠ BÀI TẬP QUẢN TRỊ BỆNH VIỆN FMFT AIOS/LSE — CƠ SỞ 3 (PKĐK THANH VŨ MEDIC CÀ MAU)
 ## CƠ SỞ THỰC HIỆN: PHÒNG KHÁM ĐA KHOA THANH VŨ MEDIC CÀ MAU
 
 ---
 
 ## 1. GIỚI THIỆU DỰ ÁN
-Thư mục này chứa toàn bộ các hồ sơ phân tích dự án cải tiến quản trị bệnh viện của **Nhóm 8 — Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau)** thuộc chương trình đào tạo Quản trị Bệnh viện FMFT AIOS / LSE do Đoàn Hùng Dũng giảng dạy.
+Thư mục này chứa toàn bộ các hồ sơ phân tích dự án cải tiến quản trị bệnh viện của **Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau)** thuộc chương trình đào tạo Quản trị Bệnh viện FMFT AIOS / LSE do Đoàn Hùng Dũng giảng dạy.
 
 Bộ bài tập bao gồm **3 đề án đột phá** theo nguyên lý *"Cặp Song Mã Quản trị"* (Kết hợp giữa tối ưu hóa tuyến đầu lâm sàng và chuẩn hóa nền tảng số hóa - văn hóa hậu cần):
 1. **Đề án 1 (`TV3-KB-01`):** Tối ưu hóa Dòng chảy Giá trị & Rút ngắn Thời gian chờ Khám Ngoại trú.
@@ -61,10 +61,6 @@ D:\Hyrta-One\...\FMFT\Bai tap CS3 - Nhom 8\
   - **Trần Trúc Linh** — Trưởng phòng Tổ chức nhân sự
   - **Nguyễn Như Ý** — Trưởng phòng Tài chính kế toán
   - **Nguyễn Thúy Kiều** — Tổ trưởng Kế toán thu Phòng TCKT
-- **Ban Điều phối Nhóm 8:**
-  - **Nguyễn Kim Nhang** — Nhóm trưởng (Phòng TCNS CS2)
-  - **Nguyễn Hoàng Duy** — Hỗ trợ nhóm trưởng (Tổ CNTT CS2)
-  - **Lục Thị Yến Nhi** — Thành viên Ban Kiểm soát Hệ thống
 
 ---
 

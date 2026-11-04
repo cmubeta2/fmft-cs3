@@ -1,6 +1,6 @@
 # BỘ HỒ SƠ PHÂN TÍCH DỰ ÁN CẢI TIẾN QUẢN TRỊ BỆNH VIỆN — FMFT AIOS/LSE
 ## ĐỀ ÁN 3: HỆ THỐNG ĐÁNH GIÁ TIÊU CHÍ NĂNG LỰC & VĂN HÓA HÀNH VI 5T
-### Đơn vị thực hiện: Hệ thống Y tế Thanh Vũ Medic — NHÓM 8 (Cơ sở 3: PKĐK Thanh Vũ Medic Cà Mau)
+### Đơn vị thực hiện: Hệ thống Y tế Thanh Vũ Medic — Cơ sở 3 — PKĐK Thanh Vũ Medic Cà Mau
 ### Mã định danh dự án: TV3-HR-5T | Phiên bản: 2.0 (Tháng 11/2026)
 
 ---
@@ -17,9 +17,9 @@
 
 | Trường theo biểu mẫu | Nội dung chi tiết cho Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau) |
 |:---|:---|
-| **Tên bệnh viện và nhóm** | - **Hệ thống Y tế Thanh Vũ Medic — NHÓM 8**<br/>- **Cơ sở thực hiện:** Cơ sở 3 — Phòng khám Đa khoa Thanh Vũ Medic Cà Mau.<br/>- **Thành phần phối hợp:** Phòng Tổ chức nhân sự (TCNS), Phòng Kế hoạch tổng hợp (KHTH), Phòng Phát triển khách hàng (PTKH), Ban Kiểm Soát KPI, Ban Giám Đốc và Trưởng 26 khoa/phòng/bộ phận. |
+| **Tên bệnh viện và nhóm** | - **Hệ thống Y tế Thanh Vũ Medic**<br/>- **Cơ sở thực hiện:** Cơ sở 3 — Phòng khám Đa khoa Thanh Vũ Medic Cà Mau.<br/>- **Thành phần phối hợp:** Phòng Tổ chức nhân sự (TCNS), Phòng Kế hoạch tổng hợp (KHTH), Phòng Phát triển khách hàng (PTKH), Ban Kiểm Soát KPI, Ban Giám Đốc và Trưởng 26 khoa/phòng/bộ phận. |
 | **Quy trình và phạm vi nhân sự** | - Quy trình đánh giá mức độ hoàn thành nhiệm vụ (HTNV), bình xét thi đua và xếp loại văn hóa ứng xử hàng tháng/quý.<br/>- Phạm vi áp dụng: Toàn bộ gần **200 nhân sự** trực thuộc 26 khoa/phòng/bộ phận tại Cơ sở 3 (Khối Lâm sàng, Khối Cận lâm sàng, Khối Chăm sóc khách hàng và Khối Hành chính - Hậu cần). |
-| **Ngày lập và người chủ trì** | - **Ngày lập đề án:** Ngày 28 tháng 10 năm 2026 (Cập nhật phiên bản hoàn thiện: Ngày 04 tháng 11 năm 2026).<br/>- **Chủ nhiệm đề án:** **Nguyễn Kim Nhang** (TCNS CS2 · Nhóm trưởng Nhóm 8).<br/>- **Đồng chủ nhiệm & Kiến trúc Tiêu chí:** **Huỳnh Trường Thanh Tâm** (PTKH CS3).<br/>- **Phối hợp chuyên môn & Nhân sự:** **Trần Trúc Linh** (TCNS CS3) & **Huỳnh Tấn Kiệt** (KHTH CS3). |
+| **Ngày lập và người chủ trì** | - **Ngày lập đề án:** Ngày 28 tháng 10 năm 2026 (Cập nhật phiên bản hoàn thiện: Ngày 04 tháng 11 năm 2026).<br/>- **Chủ nhiệm đề án:** **Trần Trúc Linh** (Trưởng phòng TCNS CS3).<br/>- **Đồng chủ nhiệm & Kiến trúc Tiêu chí:** **Huỳnh Trường Thanh Tâm** (PTKH CS3).<br/>- **Phối hợp chuyên môn:** **Huỳnh Tấn Kiệt** (KHTH CS3). |
 | **Vấn đề quan sát được, khoảng thời gian, quy mô và tác động** | - **Vấn đề quan sát được:** Công tác đánh giá nhân sự định kỳ tại Cơ sở 3 còn mang nặng tính **cảm tính, cào bằng ("dĩ hòa vi quý"), thiếu minh chứng định lượng cụ thể** ("Nói không có sách, mách không có chứng").<br/>- **Khoảng thời gian phát sinh:** Lặp đi lặp lại vào kỳ bình xét cuối mỗi tháng (từ ngày 28 đến ngày 03 tháng sau).<br/>- **Quy mô số liệu thực tế:**<br/>  + Gần **200 cán bộ nhân viên** của 26 khoa/phòng.<br/>  + **94,5%** nhân viên được các khoa tự xếp loại A hoặc A+ nhưng chỉ số hài lòng khách hàng thực tế (C4) và tỷ lệ tuân thủ quy trình SOP lại có sự chênh lệch lớn.<br/>  + **12,8%** nhân sự có phản hồi khiếu nại ngầm hoặc bất mãn vì người làm nhiều, gánh việc khó lại nhận mức đánh giá ngang bằng người làm việc cầm chừng.<br/>- **Tác động tiêu cực:**<br/>  + *Đối với người bệnh:* Nhân viên thiếu động lực phục vụ tận tâm; văn hóa giao tiếp chưa đồng đều; còn phát sinh thái độ thờ ơ hoặc giải thích qua loa.<br/>  + *Đối với nhân viên:* Triệt tiêu động lực phấn đấu của những nhân sự tài năng, chính trực; tạo tâm lý làm đối phó, che giấu lỗi lầm (Defects hiding).<br/>  + *Đối với tổ chức:* Ban Giám Đốc không nhận diện được đúng nhân sự tinh hoa để quy hoạch cán bộ nguồn; lãng phí quỹ thưởng KPI khi chia đều bình quân. |
 | **Nguồn bằng chứng hiện có và giới hạn của dữ liệu** | - **Nguồn bằng chứng hiện có:**<br/>  + [Số liệu thật]: Tổng hợp kết quả đánh giá HTNV Quý 2 & Quý 3/2026 của Phòng TCNS CS3 (điểm bình quân các khoa dao động từ 95 – 98/100 điểm, phân bố hình chuông bị lệch hoàn toàn về phía xuất sắc).<br/>  + [Số liệu thật]: Sổ ghi nhận phản ánh sự cố suýt sai sót (Near-miss) của Phòng QLCL chỉ ghi nhận 2–3 vụ/tháng (cho thấy tâm lý sợ bị trừ điểm nên không dám tự giác khai báo sai sót).<br/>  + [Số liệu thật]: Khảo sát ẩn danh eNPS nội bộ tháng 09/2026 ghi nhận 28% nhân viên cho rằng tiêu chí đánh giá hiện tại "chưa công bằng và phụ thuộc vào cảm tình của Trưởng khoa".<br/>- **Giới hạn của dữ liệu:** Chưa có khung tiêu chuẩn hành vi cụ thể kèm theo hướng dẫn minh chứng chuẩn để đối soát chéo độc lập. |
 | **Mục tiêu cải tiến dự kiến** | 1. **Chuẩn hóa 100%** việc đánh giá văn hóa và năng lực theo **Bộ tiêu chí 5T gồm 76 tiểu mục hành vi**, phân tầng theo **Bậc thang lũy tiến 5 mức** (tham chiếu chuẩn Bộ Y tế).<br/>2. **Xóa bỏ hoàn toàn đánh giá cảm tính:** $100\%$ kết quả xếp loại từ Mức 3 trở lên bắt buộc phải có minh chứng kiểm chứng được (Mã bệnh án, log phần mềm, hình ảnh hiện trường, biên bản giao ban).<br/>3. **Khuyến khích văn hóa "Học hỏi từ sai lầm":** Khai báo sự cố Near-miss được tính điểm thưởng (Đạt tiểu mục 1.10 & 1.13), không phạt điểm trừ nếu tự giác báo cáo và khắc phục.<br/>4. **Nâng tỷ lệ nhân sự đạt Mức 3 (Chuẩn mực) và Mức 4 (Cải tiến) lên $\ge 85\%$**, giảm tỷ lệ khiếu nại đánh giá xuống $< 2\%$. |
@@ -32,7 +32,7 @@
 | STT | Giả thuyết nguyên nhân | Phương pháp kiểm chứng | Người phụ trách và hạn xác minh |
 |:---:|:---|:---|:---|
 | **1** | **Tiêu chí đánh giá quá chung chung, định tính:** Tiêu chí cũ dùng các từ ngữ trừu tượng ("Nhiệt tình", "Đoàn kết tốt", "Ý thức trách nhiệm cao") mà không lượng hóa thành các hành vi quan sát được. | Rà soát bảng tiêu chí HTNV cũ của 26 khoa phòng; phân tích tính đo lường được của từng câu từ. | **Trần Trúc Linh** (TCNS CS3)<br/>*Hạn hoàn thành: 05/11/2026* |
-| **2** | **Quản lý ngại va chạm, thiếu công cụ bảo vệ:** Trưởng khoa chấm điểm khắt khe sợ mất lòng nhân viên, sợ khoa mình bị thiệt thòi về tiền thưởng so với các khoa khác. | Phỏng vấn sâu 05 lãnh đạo khoa; đối chiếu tương quan điểm số giữa các khoa lâm sàng và hậu cần. | **Nguyễn Kim Nhang** (Nhóm trưởng Nhóm 8)<br/>*Hạn hoàn thành: 05/11/2026* |
+| **2** | **Quản lý ngại va chạm, thiếu công cụ bảo vệ:** Trưởng khoa chấm điểm khắt khe sợ mất lòng nhân viên, sợ khoa mình bị thiệt thòi về tiền thưởng so với các khoa khác. | Phỏng vấn sâu 05 lãnh đạo khoa; đối chiếu tương quan điểm số giữa các khoa lâm sàng và hậu cần. | **Trần Trúc Linh** (TCNS CS3) & **Huỳnh Trường Thanh Tâm** (PTKH CS3)<br/>*Hạn hoàn thành: 05/11/2026* |
 | **3** | **Thiếu cơ chế thẩm định minh chứng độc lập:** Không có quy trình "Nói có sách, mách có chứng" dẫn đến việc tự chấm điểm theo trí nhớ và cảm tính nhất thời. | Thống kê số lượng hồ sơ đánh giá có đính kèm file bằng chứng trong 3 kỳ gần nhất ($= 0\%$). | **Huỳnh Trường Thanh Tâm** (BKS KPI)<br/>*Hạn hoàn thành: 05/11/2026* |
 
 ---
@@ -83,7 +83,7 @@ flowchart TD
 #### Bảng Quy Đổi Số Tiểu Mục Duyệt Sang Mức Điểm 5T:
 
 | Mức đạt chuẩn | TC1: Trung thực | TC2: Trách nhiệm | TC3: Thấu cảm | TC4: Tận tâm | TC5: Tri ân | Điều kiện công nhận mức điểm |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---|
+|:---:|:---:|:---:|:---:|:---:|:---|
 | **Mức 1** *(1 điểm)* | Dưới 6 TM | Dưới 6 TM | Dưới 7 TM | Dưới 7 TM | Dưới 8 TM | Vi phạm $\ge 1$ tiểu mục Mức 1 hoặc không đạt Mức 2. |
 | **Mức 2** *(2 điểm)* | Đạt đủ 6 TM (1.1 - 1.6) | Đạt đủ 6 TM (2.1 - 2.6) | Đạt đủ 7 TM (3.1 - 3.7) | Đạt đủ 7 TM (4.1 - 4.7) | Đạt đủ 8 TM (5.1 - 5.8) | Đạt $100\%$ Mức 1 + Mức 2 (Tuân thủ nền tảng). |
 | **Mức 3** *(3 điểm)* | Đạt đủ 11 TM (1.1 - 1.11)| Đạt đủ 11 TM (2.1 - 2.11)| Đạt đủ 11 TM (3.1 - 3.11)| Đạt đủ 12 TM (4.1 - 4.12)| Đạt đủ 12 TM (5.1 - 5.12)| Đạt $100\%$ từ Mức 1 $\rightarrow$ Mức 3 (Chuẩn mực). |
@@ -96,8 +96,8 @@ flowchart TD
 
 ### 1. Ma trận RACI triển khai Hệ thống 5T
 
-| Quy trình / Tác vụ | Ban Giám Đốc | Phòng TCNS (Trần Trúc Linh) | Ban Kiểm Soát & PTKH (Thanh Tâm) | Nhóm 8 (Kim Nhang) | Trưởng các Khoa/Phòng | Toàn thể Nhân viên |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Quy trình / Tác vụ | Ban Giám Đốc | Phòng TCNS (Trần Trúc Linh) | Ban Kiểm Soát & PTKH (Thanh Tâm) | Trưởng các Khoa/Phòng | Toàn thể Nhân viên |
+|:---|:---:|:---:|:---:|:---:|:---:|
 | 1. Ban hành Bộ Tiêu chí 5T & Quy chế đánh giá lũy tiến | **A** | R | C | C | C | I |
 | 2. Đào tạo, hướng dẫn phương pháp chuẩn bị minh chứng | I | **A / R** | R | R | C | I |
 | 3. Tự rà soát và cung cấp bằng chứng định kỳ | I | I | I | I | A | **R** |
@@ -151,4 +151,4 @@ BỘ KPI ĐÁNH GIÁ HIỆU QUẢ TRIỂN KHAI HỆ THỐNG 5T:
 3. **Giai đoạn 3 (Tuần 4):** Tổ chức phiên thẩm định chéo ("Check & Verify"), rút kinh nghiệm và tinh chỉnh checklist trước khi áp dụng mở rộng cho toàn bộ 26 khoa/phòng Cơ sở 3.
 
 ---
-*Hồ sơ hoàn thiện ngày 04 tháng 11 năm 2026 bởi Nhóm 8 — PKĐK Thanh Vũ Medic Cà Mau.*
+*Hồ sơ hoàn thiện ngày 04 tháng 11 năm 2026 bởi Tập thể Cán bộ Cơ sở 3 — PKĐK Thanh Vũ Medic Cà Mau.*

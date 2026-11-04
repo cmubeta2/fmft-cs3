@@ -961,9 +961,6 @@
       { group: 'Tổ chức & Tài chính', name: 'Nguyễn Như Ý', role: 'Trưởng phòng', dept: 'Phòng Tài chính kế toán', badge: 'Phân tích ROI, Hiệu quả Chi phí & Thu ngân' },
       { group: 'Tổ chức & Tài chính', name: 'Nguyễn Thúy Kiều', role: 'Tổ trưởng kế toán thu', dept: 'Phòng Tài chính kế toán', badge: 'Rút ngắn Thời gian Thu ngân & Xuất Hóa đơn' },
 
-      { group: 'Ban Điều phối Nhóm 8', name: 'Nguyễn Kim Nhang', role: 'Nhóm trưởng Nhóm 8', dept: 'Phòng TCNS CS2', badge: 'Tổng chỉ huy Nhóm 8 & Giảng dạy Phương pháp FMFT' },
-      { group: 'Ban Điều phối Nhóm 8', name: 'Nguyễn Hoàng Duy', role: 'Hỗ trợ nhóm trưởng', dept: 'Tổ CNTT CS2', badge: 'Hỗ trợ Kỹ thuật & Kết nối Hệ thống' },
-      { group: 'Ban Điều phối Nhóm 8', name: 'Lục Thị Yến Nhi', role: 'Thành viên BKS', dept: 'Ban Kiểm soát Hệ thống', badge: 'Kiểm toán Chỉ số KPI & Đo lường Tuân thủ' }
     ];
 
     /* ==========================================================================
@@ -1028,7 +1025,7 @@
        ROSTER RENDERING (TAB 5)
        ========================================================================== */
     function renderRoster(filterGroup = 'ALL') {
-      const groups = ['ALL', 'Ban Giám đốc CS3', 'KHTH & CNTT', 'Khám bệnh & Cấp cứu', 'Cận lâm sàng & Dược', 'Khách hàng & Vận hành', 'Tổ chức & Tài chính', 'Ban Điều phối Nhóm 8'];
+      const groups = ['ALL', 'Ban Giám đốc CS3', 'KHTH & CNTT', 'Khám bệnh & Cấp cứu', 'Cận lâm sàng & Dược', 'Khách hàng & Vận hành', 'Tổ chức & Tài chính'];
       
       const filtered = (filterGroup === 'ALL') 
         ? CS3_PERSONNEL 
@@ -1036,7 +1033,7 @@
 
       let html = `
         <div class="roster-header">
-          <h1>DANH BẠ 26 NHÂN SỰ CƠ SỞ 3 & BAN ĐIỀU PHỐI THỰC HIỆN</h1>
+          <h1>DANH BẠ 26 NHÂN SỰ CƠ SỞ 3 THỰC HIỆN ĐỀ ÁN</h1>
           <p style="color:var(--text-sub); font-size:14px; margin-top:4px;">
             Cơ sở thực hiện: Phòng khám Đa khoa Thanh Vũ Medic Cà Mau (Cơ sở 3) · Chương trình Quản trị Bệnh viện FMFT AIOS/LSE.
           </p>
@@ -1045,7 +1042,7 @@
         <div class="roster-filter-bar">
           ${groups.map(g => `
             <button class="roster-filter-btn ${g === filterGroup ? 'active' : ''}" onclick="renderRoster('${g}')">
-              ${g === 'ALL' ? 'Tất cả (29 thành viên)' : g}
+              ${g === 'ALL' ? 'Tất cả (26 cán bộ CS3)' : g}
             </button>
           `).join('')}
         </div>
@@ -1078,7 +1075,7 @@
       const countEl = document.getElementById('toc-count');
       if (!list) return;
       list.innerHTML = '';
-      const groups = ['Ban Giám đốc CS3', 'KHTH & CNTT', 'Khám bệnh & Cấp cứu', 'Cận lâm sàng & Dược', 'Khách hàng & Vận hành', 'Tổ chức & Tài chính', 'Ban Điều phối Nhóm 8'];
+      const groups = ['Ban Giám đốc CS3', 'KHTH & CNTT', 'Khám bệnh & Cấp cứu', 'Cận lâm sàng & Dược', 'Khách hàng & Vận hành', 'Tổ chức & Tài chính'];
       groups.forEach(g => {
         const li = document.createElement('li');
         li.className = 'toc-item h2';

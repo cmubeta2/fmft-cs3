@@ -1,5 +1,5 @@
 # KỊCH BẢN & DÀN BÀI SLIDE BÁO CÁO THUYẾT TRÌNH BÀI TẬP FMFT AIOS/LSE
-## ĐƠN VỊ: HỆ THỐNG Y TẾ THANH VŨ MEDIC — NHÓM 8 (CƠ SỞ 3: PKĐK CÀ MAU)
+## ĐƠN VỊ: HỆ THỐNG Y TẾ THANH VŨ MEDIC — CƠ SỞ 3: PKĐK THANH VŨ MEDIC CÀ MAU
 ### THAM CHIẾU THEO BIỂU MẪU CHUẨN MẪU 01 & MẪU 02 (PSD / FMFT INSTITUTE)
 ### Khẩu hiệu hành động: TRUNG THỰC – TRÁCH NHIỆM – THẤU CẢM – TẬN TÂM – TRI ÂN
 
@@ -8,7 +8,7 @@
 ## PHẦN I. TỔNG QUAN BÀI BÁO CÁO (EXECUTIVE SUMMARY)
 
 ```
-CẤU TRÚC BÁO CÁO 15 PHÚT CỦA NHÓM 8 TRƯỚC BAN ĐIỀU HÀNH FMFT:
+CẤU TRÚC BÁO CÁO 15 PHÚT CỦA CƠ SỞ 3 TRƯỚC BAN ĐIỀU HÀNH FMFT:
 ├── PHẦN MỞ ĐẦU (2 phút): Giới thiệu Đơn vị, Cơ cấu 15 thành viên & Cặp Song Mã Quản trị
 ├── CHỦ ĐỀ 1 (6 phút): Tối ưu hóa Luồng Bệnh Ngoại Trú (M01 Xác định vấn đề & M02 Bản đồ VSM)
 ├── CHỦ ĐỀ 2 (4 phút): Shin AIOS Dashboard & Trung tâm Điều hành Thông minh EWS (Back-office)
@@ -23,8 +23,8 @@ CẤU TRÚC BÁO CÁO 15 PHÚT CỦA NHÓM 8 TRƯỚC BAN ĐIỀU HÀNH FMFT:
 ### SLIDE 1: TRANG TIÊU ĐỀ CHÍNH
 - **Tiêu đề lớn:** BÁO CÁO THỰC THI DỰ ÁN CẢI TIẾN QUẢN TRỊ BỆNH VIỆN THEO PHƯƠNG PHÁP FMFT AIOS/LSE
 - **Tiêu đề phụ:** 3 ĐỀ ÁN ĐỘT PHÁ TẠI PHÒNG KHÁM ĐA KHOA THANH VŨ MEDIC CÀ MAU (CƠ SỞ 3)
-- **Đơn vị trình bày:** Nhóm 8 (Liên chuyên khoa: KHTH, Khám bệnh, PTKH, Xét nghiệm, CĐHA, TCNS, TCKT, CNTT).
-- **Người chủ trì báo cáo:** Nguyễn Kim Nhang (Nhóm trưởng) & Huỳnh Trường Thanh Tâm (PTKH CS3).
+- **Đơn vị trình bày:** Cơ sở 3 (Liên chuyên khoa: KHTH, Khám bệnh, PTKH, Xét nghiệm, CĐHA, TCNS, TCKT, CNTT).
+- **Người chủ trì báo cáo:** Huỳnh Trường Thanh Tâm (PTKH CS3) & Huỳnh Tấn Kiệt (KHTH CS3).
 - **Chân trang:** *Hệ thống Y tế Thanh Vũ Medic | Trung thực – Trách nhiệm – Thấu cảm – Tận tâm – Tri ân.*
 
 ---
@@ -33,8 +33,7 @@ CẤU TRÚC BÁO CÁO 15 PHÚT CỦA NHÓM 8 TRƯỚC BAN ĐIỀU HÀNH FMFT:
 - **Mục tiêu slide:** Thể hiện sự đồng thuận, gắn kết và tham gia thực chất của toàn bộ 26 cán bộ nhân sự thuộc Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau) cùng Ban điều phối Nhóm 8.
 - **Bố cục phân tầng 6 khối chức năng:**
   + *Ban Giám đốc CS3 (Chỉ đạo & Bảo trợ):* CN. Trần Thiện Phúc (Giám đốc điều hành), BS. CKII. Nguyễn Văn Dũng (Giám đốc chuyên môn), Phạm Kim Ngân (Phó Giám đốc).
-  + *Ban Điều phối Nhóm 8:* Nguyễn Kim Nhang (Nhóm trưởng - TCNS CS2), Nguyễn Hoàng Duy (Hỗ trợ nhóm trưởng - CNTT CS2), Lục Thị Yến Nhi (Ban Kiểm soát).
-  + *Khối KHTH & Công nghệ thông tin:* Huỳnh Tấn Kiệt (Trưởng phòng KHTH), Lê Thị Mỹ Phương (Phó phòng KHTH), Võ Lê Chương (Tổ trưởng CNTT - PTPM).
+    + *Khối KHTH & Công nghệ thông tin:* Huỳnh Tấn Kiệt (Trưởng phòng KHTH), Lê Thị Mỹ Phương (Phó phòng KHTH), Võ Lê Chương (Tổ trưởng CNTT - PTPM).
   + *Khối Khám bệnh & Cấp cứu:* Huỳnh Thị Nga (Điều dưỡng trưởng Khoa Khám bệnh), Nguyễn Ngọc Lan (Điều dưỡng phó Khoa Khám bệnh), Trần Hải Triều (Điều dưỡng Khoa Khám), Nguyễn Phương Nam (Điều dưỡng Khoa Khám), Phạm Vũ Linh (Điều dưỡng Cấp cứu), Bùi Mỹ Diện (Điều dưỡng Tiêm ngừa).
   + *Khối Chuyên môn Cận lâm sàng & Dược:* Đào Văn Khuynh (Phụ trách Phòng Nội soi), Lê Như Ý (Phụ trách Điều dưỡng Nội soi), Trương Chí Toại (Trưởng khoa CĐHA), Phạm Kiều Trang (Điều dưỡng trưởng CĐHA), Ngô Bảo Trọng (Kỹ thuật viên trưởng CĐHA), Lê Minh Mẫn (Trưởng phòng Xét nghiệm), Mai Duy Linh (Phó phòng Xét nghiệm), Trần Văn Thơi (Phó khoa Dược).
   + *Khối Vận hành, Khách hàng, Tổ chức & Tài chính:* Huỳnh Trường Thanh Tâm (Phó phòng PTKH), Tạ Minh Phước (Tổ trưởng PTKH), Lữ Phú Sinh (Trưởng phòng QT Tòa nhà), Trần Trúc Linh (Trưởng phòng TCNS), Nguyễn Như Ý (Trưởng phòng TCKT), Nguyễn Thúy Kiều (Tổ trưởng Kế toán thu).
@@ -174,7 +173,7 @@ CẤU TRÚC BÁO CÁO 15 PHÚT CỦA NHÓM 8 TRƯỚC BAN ĐIỀU HÀNH FMFT:
 
 ---
 
-### SLIDE 19: TỔNG HỢP LỘ TRÌNH TRIỂN KHAI 90 NGÀY CỦA NHÓM 8
+### SLIDE 19: TỔNG HỢP LỘ TRÌNH TRIỂN KHAI 90 NGÀY CỦA CƠ SỞ 3
 - **Tháng thứ 1 (Tháng 11/2026): Thí điểm & Đo lường đối chứng**
   + Triển khai Fast-track và màn hình đổi màu HIS tại Cơ sở 3.
   + Đưa vào vận hành thử nghiệm Shin AIOS Dashboard và thí điểm 5T tại 3 khoa phòng.
@@ -191,4 +190,4 @@ CẤU TRÚC BÁO CÁO 15 PHÚT CỦA NHÓM 8 TRƯỚC BAN ĐIỀU HÀNH FMFT:
 - **Lời tri ân:** Xin trân trọng cảm ơn Thầy Đoàn Hùng Dũng, Ban Giám đốc Hệ thống và toàn thể đồng nghiệp đã lắng nghe và đồng hành!
 
 ---
-*Kịch bản hoàn thiện ngày 04 tháng 11 năm 2026 bởi Nhóm 8 — PKĐK Thanh Vũ Medic Cà Mau.*
+*Kịch bản hoàn thiện ngày 04 tháng 11 năm 2026 bởi Tập thể Cán bộ Cơ sở 3 — PKĐK Thanh Vũ Medic Cà Mau.*
