@@ -5,13 +5,6 @@
 
 ---
 
-> [!IMPORTANT]
-> **RANH GIỚI BẤT KHẢ XÂM PHẠM VỀ Y KHOA:**
-> - Dự án cải tiến này **tuyệt đối chỉ tối ưu hóa quy trình luồng vận hành, loại bỏ lãng phí chờ đợi và chuẩn hóa bàn giao thông tin**; tuyệt đối **không can thiệp chuyên môn y khoa**, không cắt bớt thời gian thăm khám lâm sàng, giải thích bệnh và tư vấn dùng thuốc của Bác sĩ (duy trì tối thiểu 7 – 10 phút/ca khi kết luận).
-> - Nghiêm ngặt tuân thủ 03 yếu tố nhận diện người bệnh (Họ tên, Năm sinh, Mã số người bệnh) tại mọi điểm chạm.
-
----
-
 ## M01. PHIẾU XÁC ĐỊNH VẤN ĐỀ VÀ CHỌN ƯU TIÊN
 
 | Trường theo biểu mẫu | Nội dung chi tiết cho Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau) |

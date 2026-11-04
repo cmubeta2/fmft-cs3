@@ -5,14 +5,6 @@
 
 ---
 
-> [!NOTE]
-> **TÍNH TƯƠNG HỖ CHIẾN LƯỢC TRONG CẶP SONG MÃ QUẢN TRỊ:**
-> - **Đề án 1 (`TV3-KB-01` - Front-line):** Tối ưu hóa hiện trường luồng bệnh ngoại trú, giảm thời gian chờ đợi.
-> - **Đề án 2 (`TV3-AIOS-02` - Back-office):** Xây dựng Trung tâm Điều hành Thông minh (Shin AIOS Dashboard), giải phóng 80% thời gian báo cáo thủ công, liên thông dữ liệu KPI 3 cấp và kích hoạt Hệ thống Cảnh báo Sớm (Early Warning System - EWS) giúp Ban Giám Đốc và các Trưởng khoa/phòng ra quyết định điều hành tức thì theo thời gian thực (Real-time).
-> - *Dữ liệu kế thừa thực chứng từ:* Đề án 26-01 (Cải tiến Hệ thống Dashboard KPI), Đề án 25-01 (Ứng dụng CNTT trong PTKH & CSKH), và Ứng dụng Quản lý Vận hành TVM Work Management đang áp dụng thực tế tại Cơ sở 3 Cà Mau.
-
----
-
 ## M01. PHIẾU XÁC ĐỊNH VẤN ĐỀ VÀ CHỌN ƯU TIÊN
 
 | Trường theo biểu mẫu | Nội dung chi tiết cho Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau) |

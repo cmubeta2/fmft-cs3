@@ -5,14 +5,6 @@
 
 ---
 
-> [!NOTE]
-> **TRIẾT LÝ QUẢN TRỊ NHÂN SỰ & VĂN HÓA AN TOÀN NỀN TẢNG:**
-> - Dự án được xây dựng dựa trên Bộ giá trị cốt lõi của Hệ thống Y tế Thanh Vũ Medic: **TRUNG THỰC – TRÁCH NHIỆM – THẤU CẢM – TẬN TÂM – TRI ÂN (5T)**.
-> - Kế thừa phương pháp luận **"Bậc thang lũy tiến 5 mức"** của Bộ 83 Tiêu chí Chất lượng Bệnh viện (Bộ Y tế) và nguyên tắc quản trị FMFT AIOS: **"Nói có sách, mách có chứng"** (Evidence-based Assessment).
-> - Chấm dứt hoàn toàn tình trạng đánh giá cảm tính, cào bằng "dĩ hòa vi quý", biến công tác đánh giá nhân sự thành động lực phát triển cá nhân, nâng cao văn hóa an toàn và cam kết chất lượng dịch vụ hướng tới chuẩn 5 sao.
-
----
-
 ## M01. PHIẾU XÁC ĐỊNH VẤN ĐỀ VÀ CHỌN ƯU TIÊN
 
 | Trường theo biểu mẫu | Nội dung chi tiết cho Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau) |
