@@ -353,33 +353,48 @@
       max-width: 1400px;
       margin: 16px auto 0;
       padding: 0 16px;
+      width: 100%;
     }
     .tabs-nav {
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      padding-bottom: 4px;
-      scrollbar-width: none;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      width: 100%;
+      overflow: visible;
     }
     .tabs-nav::-webkit-scrollbar { display: none; }
 
+    @media (max-width: 900px) {
+      .tabs-nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     .tab-btn {
       font-family: inherit;
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 700;
       color: var(--text-sub);
       background: var(--card);
       border: 1px solid var(--border);
-      padding: 10px 18px;
+      padding: 10px 12px;
       border-radius: var(--radius-full);
       cursor: pointer;
-      display: inline-flex;
+      display: flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
       white-space: nowrap;
       min-height: 44px;
+      width: 100%;
       box-shadow: var(--shadow-sm);
       transition: all 0.15s ease;
+      text-align: center;
+    }
+    .tab-btn span:first-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .tab-btn:hover {
       background: var(--primary-soft);
@@ -907,11 +922,10 @@
        DATA: TÀI LIỆU VÀ DANH BẠ 26 NHÂN SỰ CS3
        ========================================================================== */
     const DOCS = [
-      { id: 'da1', t: '🏥 Đề án 1 · Rút ngắn thời gian chờ ngoại trú', badge: 'M01-M04', f: 'DE_AN_1_TOI_UU_THOI_GIAN_CHO_NGOAI_TRU_M01_M04.md' },
-      { id: 'da2', t: '📊 Đề án 2 · Shin AIOS Dashboard & EWS', badge: 'M01-M04', f: 'DE_AN_2_SHIN_AIOS_DASHBOARD_DIEU_HANH_M01_M04.md' },
-      { id: 'da3', t: '🎯 Đề án 3 · Khung năng lực & Bậc thang 5T', badge: 'M01-M04', f: 'DE_AN_3_HE_THONG_DANH_GIA_NANG_LUC_5T_M01_M04.md' },
-      { id: 'sl',  t: '📽️ Slide Thuyết trình · Kịch bản 20 Slide', badge: 'BGD', f: 'SLIDE_BAO_CAO_THUYET_TRINH_3_DE_AN_CS3.md' },
-      { id: 'ns',  t: '👥 Nhân sự CS3 · Toàn bộ 26 Cán bộ & Phân công', badge: '26 TV', isRoster: true }
+      { id: 'da1', t: '🏥 Đề án 1: Thời gian chờ ngoại trú', badge: 'M01-M04', f: 'DE_AN_1_TOI_UU_THOI_GIAN_CHO_NGOAI_TRU_M01_M04.md' },
+      { id: 'da2', t: '📊 Đề án 2: SHIN AIOS Dashboard', badge: 'M01-M04', f: 'DE_AN_2_SHIN_AIOS_DASHBOARD_DIEU_HANH_M01_M04.md' },
+      { id: 'da3', t: '🎯 Đề án 3: Khung năng lực 5T', badge: 'M01-M04', f: 'DE_AN_3_HE_THONG_DANH_GIA_NANG_LUC_5T_M01_M04.md' },
+      { id: 'ns',  t: '👥 Danh bạ 26 Nhân sự CS3', badge: '26 TV', isRoster: true }
     ];
 
     const CS3_PERSONNEL = [
