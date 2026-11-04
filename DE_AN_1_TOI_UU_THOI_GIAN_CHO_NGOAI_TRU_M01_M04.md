@@ -12,6 +12,27 @@
 
 ---
 
+> [!NOTE]
+> ### 🌐 HỆ SINH THÁI 3 ĐỀ ÁN QUẢN TRỊ BỆNH VIỆN LIÊN HOÀN TẠI CƠ SỞ 3 (PKĐK THANH VŨ MEDIC CÀ MAU)
+> Bộ hồ sơ bài tập Quản trị Bệnh viện FMFT AIOS/LSE của Cơ sở 3 được thiết kế theo cấu trúc **"Kiềng 3 Chân" (Mũi nhọn Lâm sàng – Đòn bẩy Công nghệ – Nền tảng Con người)** nhằm giải quyết triệt để bài toán nâng cao chất lượng dịch vụ và tối ưu hiệu suất vận hành:
+> 
+> 1. 🏥 **ĐỀ ÁN 1 (TRỌNG TÂM ĐỘT PHÁ — LÂM SÀNG & QUY TRÌNH · Mã TV3-KB-01):**
+>    * **Tên đề án:** Tối ưu hóa Dòng chảy Giá trị & Rút ngắn Thời gian Chờ Khám Ngoại trú.
+>    * **Vai trò:** Mũi nhọn cải tiến hiện trường (Front-line Operations).
+>    * **Trọng tâm can thiệp:** Tháo gỡ điểm nghẽn bức xúc nhất tại **Khâu B2c — Chờ khám kết luận sau khi có đủ kết quả Cận lâm sàng** (rút ngắn từ $>60$ phút xuống $\le 15$ phút), giải tỏa ùn ứ B2a ($>50$ người/buồng khám), đưa tổng thời gian lưu viện ngoại trú (TAT) giờ cao điểm từ 195 phút xuống $\le 120$ phút; bảo toàn nguyên vẹn thời gian khám chuyên môn của Bác sĩ ($7 - 10$ phút/ca).
+> 
+> 2. 📊 **ĐỀ ÁN 2 (ĐÒN BẨY CÔNG NGHỆ & ĐIỀU HÀNH THỜI GIAN THỰC · Mã TV3-AIOS-02):**
+>    * **Tên đề án:** SHIN AIOS Dashboard — Trung tâm Điều hành Thông minh, Liên thông KPI 3 Cấp & Cảnh báo Sớm EWS.
+>    * **Vai trò:** Tháp điều hành dữ liệu và cảnh báo (Control Center).
+>    * **Tính tương hỗ với Đề án 1:** Cung cấp giao diện trực quan cho Ban Giám đốc và Điều dưỡng trưởng; cảnh báo tức thì khi hàng chờ buồng khám B2a $>50$ người hoặc khi bệnh nhân có đủ 100% kết quả CLS mà chưa được gọi vào buồng khám B2c quá 15 phút, giúp kích hoạt điều phối thông minh.
+> 
+> 3. 🎯 **ĐỀ ÁN 3 (NỀN TẢNG CON NGƯỜI & CHUẨN MỰC HÀNH VI · Mã TV3-HR-5T):**
+>    * **Tên đề án:** Hệ thống Đánh giá Tiêu chí Năng lực & Văn hóa Hành vi 5T.
+>    * **Vai trò:** Nền tảng văn hóa an toàn và năng lực nhân sự (People & Culture).
+>    * **Tính tương hỗ với Đề án 1 & 2:** Định chuẩn hành vi cho toàn bộ **26 cán bộ nhân sự CS3** theo 5 giá trị cốt lõi: **Trung thực – Trách nhiệm – Thấu cảm – Tận tụy – Tiên tiến**; loại bỏ tư duy đối phó/đổ lỗi, biến các chỉ số thời gian chờ và năng suất thành tiêu chí đánh giá năng lực thực chất định kỳ.
+
+---
+
 ## M01. PHIẾU XÁC ĐỊNH VẤN ĐỀ VÀ CHỌN ƯU TIÊN
 
 | Trường theo biểu mẫu | Nội dung chi tiết cho Cơ sở 3 (PKĐK Thanh Vũ Medic Cà Mau) |
