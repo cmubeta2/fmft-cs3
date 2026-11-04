@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Hồ sơ Bài tập CS3 · 3 Đề án Quản trị Bệnh viện FMFT AIOS | PKĐK Thanh Vũ Medic Cà Mau</title>
+  <meta name="description" content="Hồ sơ bài tập thực thi Quản trị Bệnh viện FMFT AIOS/LSE - Cơ sở 3 PKĐK Thanh Vũ Medic Cà Mau (Nhóm 8)">
+  <meta name="theme-color" content="#0e7490">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
+  <style>
+    /* ==========================================================================
+       1. SHIN AIOS DESIGN SYSTEM - CLINICAL & EXECUTIVE TOKENS
+       ========================================================================== */
+    :root {
+      --primary: #0e7490;
+      --primary-hover: #155e75;
+      --primary-soft: rgba(14, 116, 144, 0.08);
+      --primary-border: rgba(14, 116, 144, 0.22);
+      --primary-glow: rgba(14, 116, 144, 0.35);
+
+      --accent: #d97706;
+      --accent-soft: rgba(217, 119, 6, 0.1);
+      
+      --c-green: #059669;
+      --c-green-soft: rgba(5, 150, 105, 0.12);
+      --c-green-border: rgba(5, 150, 105, 0.25);
+      
+      --c-blue: #0284c7;
+      --c-blue-soft: rgba(2, 132, 199, 0.1);
+      
+      --c-red: #dc2626;
+      --c-red-soft: rgba(220, 38, 38, 0.1);
+
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --card-sub: #f1f5f9;
+      --border: #e2e8f0;
+      --border-subtle: #edf2f7;
+
+      --text: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #94a3b8;
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 10px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.09), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --topbar-h: 62px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #090d16;
+      --card: #111827;
+      --card-sub: #1f2937;
+      --border: #283548;
+      --border-subtle: #1e293b;
+
+      --text: #f8fafc;
+      --text-sub: #94a3b8;
+      --text-muted: #64748b;
+
+      --primary-soft: rgba(14, 116, 144, 0.22);
+      --primary-border: rgba(14, 116, 144, 0.45);
+      --primary-glow: rgba(14, 116, 144, 0.55);
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 6px 14px rgba(0, 0, 0, 0.45);
+      --shadow-lg: 0 14px 28px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Reset & Base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 15px; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    /* ==========================================================================
+       2. TOPBAR HEADER
+       ========================================================================== */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      height: var(--topbar-h);
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-back {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-sub);
+      background: var(--card-sub);
+      border: 1px solid var(--border);
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      transition: all 0.15s ease;
+      min-height: 38px;
+    }
+    .btn-back:hover {
+      background: var(--primary-soft);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--primary) 0%, #0284c7 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: -0.5px;
+      box-shadow: 0 2px 8px var(--primary-glow);
+    }
+
+    .brand-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.25;
+      letter-spacing: -0.2px;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--primary);
+      line-height: 1.25;
+    }
+
+    .status-pill {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--c-green-soft);
+      border: 1px solid var(--c-green-border);
+      color: var(--c-green);
+      font-size: 11.5px;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+    }
+    @media (min-width: 900px) {
+      .status-pill { display: inline-flex; }
+    }
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--c-green);
+      box-shadow: 0 0 8px var(--c-green);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-action {
+      background: var(--card-sub);
+      border: 1px solid var(--border);
+      color: var(--text);
+      min-height: 38px;
+      padding: 0 12px;
+      border-radius: var(--radius-sm);
+      font-size: 12.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn-action:hover {
+      background: var(--primary-soft);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .btn-action.primary {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .btn-action.primary:hover {
+      background: var(--primary-hover);
+    }
+
+    /* ==========================================================================
+       3. EXECUTIVE KPI STAT BANNER
+       ========================================================================== */
+    .kpi-banner-wrap {
+      max-width: 1400px;
+      margin: 18px auto 0;
+      padding: 0 16px;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    @media (min-width: 768px) {
+      .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 1100px) {
+      .kpi-grid { grid-template-columns: repeat(6, 1fr); }
+    }
+
+    .kpi-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary-border);
+    }
+    .kpi-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary);
+      opacity: 0.8;
+    }
+    .kpi-card.green::before { background: var(--c-green); }
+    .kpi-card.amber::before { background: var(--accent); }
+    .kpi-card.blue::before { background: var(--c-blue); }
+
+    .kpi-label {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .kpi-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text);
+      font-family: var(--font-mono);
+      line-height: 1.2;
+    }
+    .kpi-delta {
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kpi-delta.good { color: var(--c-green); }
+    .kpi-delta.info { color: var(--c-blue); }
+
+    /* ==========================================================================
+       4. LEGAL NOTICE CALLOUT
+       ========================================================================== */
+    .notice-box {
+      max-width: 1400px;
+      margin: 14px auto 0;
+      padding: 0 16px;
+    }
+    .notice-content {
+      background: var(--accent-soft);
+      border: 1px solid rgba(217, 119, 6, 0.3);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .notice-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ==========================================================================
+       5. NAVIGATION TABS (5 PHÂN HỆ)
+       ========================================================================== */
+    .tabs-wrapper {
+      max-width: 1400px;
+      margin: 16px auto 0;
+      padding: 0 16px;
+    }
+    .tabs-nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .tabs-nav::-webkit-scrollbar { display: none; }
+
+    .tab-btn {
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-sub);
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      min-height: 44px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+    }
+    .tab-btn:hover {
+      background: var(--primary-soft);
+      color: var(--primary);
+      border-color: var(--primary-border);
+    }
+    .tab-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+    .tab-badge {
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .tab-btn:not(.active) .tab-badge {
+      background: var(--card-sub);
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       6. WORKSPACE LAYOUT (SIDEBAR TOC + MAIN ARTICLE)
+       ========================================================================== */
+    .main-workspace {
+      max-width: 1400px;
+      margin: 18px auto 40px;
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 1040px) {
+      .main-workspace {
+        grid-template-columns: 290px 1fr;
+        align-items: start;
+      }
+    }
+
+    /* Sidebar Table of Contents */
+    .sidebar-toc {
+      display: none;
+    }
+    @media (min-width: 1040px) {
+      .sidebar-toc {
+        display: block;
+        position: sticky;
+        top: calc(var(--topbar-h) + 16px);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 16px;
+        box-shadow: var(--shadow-sm);
+        max-height: calc(100vh - var(--topbar-h) - 32px);
+        overflow-y: auto;
+      }
+    }
+
+    .toc-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .toc-search {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 12.5px;
+      font-family: inherit;
+      background: var(--card-sub);
+      color: var(--text);
+      outline: none;
+      margin-bottom: 12px;
+      transition: border-color 0.15s ease;
+    }
+    .toc-search:focus {
+      border-color: var(--primary);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .toc-item a {
+      display: block;
+      padding: 6px 10px;
+      font-size: 12.5px;
+      color: var(--text-sub);
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      line-height: 1.4;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .toc-item a:hover {
+      background: var(--primary-soft);
+      color: var(--primary);
+    }
+    .toc-item.active a {
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 700;
+      border-left: 3px solid var(--primary);
+    }
+    .toc-item.h2 a { padding-left: 10px; font-weight: 600; }
+    .toc-item.h3 a { padding-left: 20px; font-size: 11.5px; color: var(--text-muted); }
+
+    /* Main Document Container */
+    .doc-container {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      min-height: 480px;
+      overflow-x: hidden;
+    }
+    @media (min-width: 768px) {
+      .doc-container { padding: 36px 42px; }
+    }
+
+    /* Presentation mode */
+    body.presentation-mode .topbar { display: none; }
+    body.presentation-mode .kpi-banner-wrap { display: none; }
+    body.presentation-mode .notice-box { display: none; }
+    body.presentation-mode .sidebar-toc { display: none; }
+    body.presentation-mode .main-workspace { grid-template-columns: 1fr; max-width: 1100px; }
+    body.presentation-mode .doc-container { font-size: 17px; padding: 48px; border: 0; box-shadow: none; }
+    .exit-presentation-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #0f172a;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      display: none;
+      box-shadow: var(--shadow-lg);
+    }
+    body.presentation-mode .exit-presentation-btn { display: inline-flex; }
+
+    /* ==========================================================================
+       7. MARKDOWN STYLES (CLINICAL POLISH)
+       ========================================================================== */
+    #doc-content h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    #doc-content h2 {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text);
+      margin-top: 36px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary-soft);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    #doc-content h3 {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    #doc-content p {
+      margin-bottom: 14px;
+      line-height: 1.7;
+      color: var(--text);
+    }
+    #doc-content hr {
+      border: 0;
+      height: 1px;
+      background: var(--border);
+      margin: 28px 0;
+    }
+
+    /* Tables */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin: 18px 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    #doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      text-align: left;
+    }
+    #doc-content th {
+      background: var(--card-sub);
+      color: var(--text);
+      font-weight: 800;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    #doc-content td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+      line-height: 1.55;
+    }
+    #doc-content tr:last-child td { border-bottom: 0; }
+    #doc-content tr:hover td { background: var(--primary-soft); }
+
+    /* Callout & Blockquote */
+    #doc-content blockquote {
+      margin: 16px 0;
+      padding: 12px 18px;
+      border-left: 4px solid var(--primary);
+      background: var(--primary-soft);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      color: var(--text);
+      font-size: 14px;
+    }
+    #doc-content blockquote p { margin-bottom: 6px; }
+    #doc-content blockquote p:last-child { margin-bottom: 0; }
+
+    /* Code & Pre */
+    #doc-content pre {
+      background: #0b1329;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      line-height: 1.5;
+      margin: 16px 0;
+      border: 1px solid #1e293b;
+    }
+    #doc-content code:not(pre code) {
+      background: var(--card-sub);
+      color: var(--primary);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      border: 1px solid var(--border);
+    }
+
+    /* Mermaid */
+    #doc-content .mermaid {
+      background: var(--card);
+      padding: 16px;
+      border-radius: var(--radius-md);
+      margin: 18px 0;
+      text-align: center;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+    }
+
+    /* List */
+    #doc-content ul, #doc-content ol {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+    #doc-content li { margin-bottom: 6px; }
+
+    /* ==========================================================================
+       8. TAB 5: CS3 PERSONNEL ROSTER (ORGANIZATIONAL DIRECTORY)
+       ========================================================================== */
+    .roster-header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .roster-filter-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .roster-filter-btn {
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border);
+      background: var(--card-sub);
+      color: var(--text-sub);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .roster-filter-btn:hover {
+      background: var(--primary-soft);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+    .roster-filter-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .roster-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 680px) {
+      .roster-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1040px) {
+      .roster-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .member-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.15s ease;
+    }
+    .member-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary-border);
+    }
+    .member-card.leader {
+      border: 1.5px solid var(--primary);
+      background: linear-gradient(to bottom, var(--primary-soft), var(--card));
+    }
+    .member-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .member-name {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .member-group-tag {
+      font-size: 10.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: var(--radius-sm);
+      background: var(--card-sub);
+      color: var(--text-sub);
+      border: 1px solid var(--border);
+    }
+    .member-role {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .member-dept {
+      font-size: 12px;
+      color: var(--text-sub);
+      margin-bottom: 10px;
+    }
+    .member-badge {
+      font-size: 11.5px;
+      color: var(--text);
+      background: var(--card-sub);
+      border-left: 3px solid var(--primary);
+      padding: 6px 10px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      line-height: 1.4;
+    }
+
+    /* Print styling */
+    @media print {
+      .topbar, .kpi-banner-wrap, .notice-box, .tabs-wrapper, .sidebar-toc, .exit-presentation-btn { display: none !important; }
+      .main-workspace { margin: 0; padding: 0; display: block; max-width: 100%; }
+      .doc-container { border: 0; box-shadow: none; padding: 0; }
+      body { background: #fff; color: #000; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar Header -->
+  <header class="topbar">
+    <div class="brand-section">
+      <a href="https://cmubeta2.github.io/fmft-nhom8-thanhvumedic/" class="btn-back" title="Quay lại Cổng Điều Hành Nhóm 8">← Cổng Nhóm 8</a>
+      <div class="brand-logo">CS3</div>
+      <div class="brand-info">
+        <div class="brand-title">HỒ SƠ BÀI TẬP QUẢN TRỊ BỆNH VIỆN · FMFT AIOS</div>
+        <div class="brand-sub">PKĐK THANH VŨ MEDIC CÀ MAU · CƠ SỞ 3</div>
+      </div>
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Live · Đạt Chuẩn Báo Cáo</span>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="btn-action" id="theme-toggle" title="Đổi giao diện Sáng / Tối">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-label" style="display:none; @media(min-width:600px){display:inline}">Giao diện</span>
+      </button>
+      <button class="btn-action" id="presentation-toggle" title="Chế độ Thuyết trình">
+        <span>🖥️</span>
+        <span style="display:none; @media(min-width:768px){display:inline}">Thuyết trình</span>
+      </button>
+      <button class="btn-action" onclick="window.print()" title="In / Xuất PDF">
+        <span>🖨️</span>
+        <span style="display:none; @media(min-width:768px){display:inline}">In / PDF</span>
+      </button>
+      <a class="btn-action primary" href="HO_SO_BAI_TAP_FMFT_CS3_NHOM_8_FINAL.docx" download title="Tải file Word hoàn chỉnh">
+        <span>⬇ Tải Word</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Executive KPI Banner -->
+  <div class="kpi-banner-wrap">
+    <div class="kpi-grid">
+      <div class="kpi-card green">
+        <div class="kpi-label">⏱️ TAT Ngoại trú</div>
+        <div class="kpi-val">78 phút</div>
+        <div class="kpi-delta good">↓ 47.3% (Từ 148p)</div>
+      </div>
+      <div class="kpi-card green">
+        <div class="kpi-label">⏳ Chờ kết luận</div>
+        <div class="kpi-val">12 phút</div>
+        <div class="kpi-delta good">↓ 73.3% (Từ 45p)</div>
+      </div>
+      <div class="kpi-card blue">
+        <div class="kpi-label">🩺 Bác sĩ khám (VA)</div>
+        <div class="kpi-val">8.2 phút</div>
+        <div class="kpi-delta info">Bảo toàn chất lượng</div>
+      </div>
+      <div class="kpi-card green">
+        <div class="kpi-label">⚡ Báo cáo ngày</div>
+        <div class="kpi-val">3 phút</div>
+        <div class="kpi-delta good">↓ 85.0% (Từ 20p)</div>
+      </div>
+      <div class="kpi-card amber">
+        <div class="kpi-label">🎯 Năng lực 5T</div>
+        <div class="kpi-val">≥ 85% M3-4</div>
+        <div class="kpi-delta info">Khiếu nại &lt; 2%</div>
+      </div>
+      <div class="kpi-card green">
+        <div class="kpi-label">💰 Lợi ích kinh tế</div>
+        <div class="kpi-val">680 triệu</div>
+        <div class="kpi-delta good">ROI dự kiến 4.8x</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legal Notice Callout -->
+  <div class="notice-box">
+    <div class="notice-content">
+      <div class="notice-icon">⚠️</div>
+      <div>
+        <strong>Lưu ý dữ liệu & Nguyên tắc tối thượng về Y khoa:</strong> Các số liệu nền (baseline), mục tiêu và kết quả Before–After trong 3 đề án là <strong>số liệu dự thảo / giả định thực nghiệm</strong>, cần xác minh bằng log HIS/LIS/PACS và khảo sát thực tế trước khi công bố chính thức. Đề án <strong>tuyệt đối chỉ tối ưu hóa dòng chảy quy trình, loại bỏ lãng phí và số hóa quản trị</strong>; không can thiệp và không cắt bớt thời gian khám chuyên môn của Bác sĩ.
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Tabs -->
+  <div class="tabs-wrapper">
+    <nav class="tabs-nav" id="tabs-nav"></nav>
+  </div>
+
+  <!-- Main Workspace -->
+  <main class="main-workspace">
+    <!-- Sidebar TOC -->
+    <aside class="sidebar-toc">
+      <div class="toc-title">
+        <span>Mục lục đề án</span>
+        <span style="font-size:11px; color:var(--text-muted); font-family:var(--font-mono);" id="toc-count">0 mục</span>
+      </div>
+      <input type="text" id="toc-search-input" class="toc-search" placeholder="🔍 Lọc nội dung...">
+      <ul class="toc-list" id="toc-list"></ul>
+    </aside>
+
+    <!-- Main Document Canvas -->
+    <article class="doc-container" id="doc-container">
+      <div id="doc-content">Đang tải tài liệu...</div>
+    </article>
+  </main>
+
+  <button class="exit-presentation-btn" id="exit-pres-btn">✕ Thoát chế độ Thuyết trình</button>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+
+  <script>
+    /* ==========================================================================
+       DATA: TÀI LIỆU VÀ DANH BẠ 26 NHÂN SỰ CS3
+       ========================================================================== */
+    const DOCS = [
+      { id: 'da1', t: '🏥 Đề án 1 · Rút ngắn thời gian chờ ngoại trú', badge: 'M01-M04', f: 'DE_AN_1_TOI_UU_THOI_GIAN_CHO_NGOAI_TRU_M01_M04.md' },
+      { id: 'da2', t: '📊 Đề án 2 · Shin AIOS Dashboard & EWS', badge: 'M01-M04', f: 'DE_AN_2_SHIN_AIOS_DASHBOARD_DIEU_HANH_M01_M04.md' },
+      { id: 'da3', t: '🎯 Đề án 3 · Khung năng lực & Bậc thang 5T', badge: 'M01-M04', f: 'DE_AN_3_HE_THONG_DANH_GIA_NANG_LUC_5T_M01_M04.md' },
+      { id: 'sl',  t: '📽️ Slide Thuyết trình · Kịch bản 20 Slide', badge: 'BGD', f: 'SLIDE_BAO_CAO_THUYET_TRINH_3_DE_AN_CS3.md' },
+      { id: 'ns',  t: '👥 Nhân sự CS3 · Toàn bộ 26 Cán bộ & Phân công', badge: '26 TV', isRoster: true }
+    ];
+
+    const CS3_PERSONNEL = [
+      { group: 'Ban Giám đốc CS3', name: 'CN. Trần Thiện Phúc', role: 'Giám đốc điều hành', dept: 'Ban Giám đốc CS3', badge: 'Chỉ đạo & Điều hành chung Cơ sở 3', isLeader: true },
+      { group: 'Ban Giám đốc CS3', name: 'BS. CKII. Nguyễn Văn Dũng', role: 'Giám đốc chuyên môn', dept: 'Ban Giám đốc CS3', badge: 'Bảo trợ & Chuẩn hóa Chuyên môn Y khoa', isLeader: true },
+      { group: 'Ban Giám đốc CS3', name: 'Phạm Kim Ngân', role: 'Phó Giám đốc', dept: 'Ban Giám đốc CS3', badge: 'Quản trị Vận hành CS3' },
+
+      { group: 'KHTH & CNTT', name: 'Huỳnh Tấn Kiệt', role: 'Trưởng phòng', dept: 'Phòng Kế hoạch tổng hợp', badge: 'Chủ nhiệm Đề án 1 (Ngoại trú) & Điều phối Luồng' },
+      { group: 'KHTH & CNTT', name: 'Lê Thị Mỹ Phương', role: 'Phó phòng', dept: 'Phòng Kế hoạch tổng hợp', badge: 'Giám sát TAT & Quy chuẩn Bàn giao' },
+      { group: 'KHTH & CNTT', name: 'Võ Lê Chương', role: 'Tổ trưởng', dept: 'Tổ CNTT - PTPM', badge: 'Kiến trúc Kỹ thuật & Cấu hình AIOS HIS' },
+
+      { group: 'Khám bệnh & Cấp cứu', name: 'Huỳnh Thị Nga', role: 'Điều dưỡng trưởng', dept: 'Khoa Khám bệnh', badge: 'Điều phối Buồng khám & Fast-track Mạn tính' },
+      { group: 'Khám bệnh & Cấp cứu', name: 'Nguyễn Ngọc Lan', role: 'Điều dưỡng phó', dept: 'Khoa Khám bệnh', badge: 'Phân luồng Tiếp nhận & Đo sinh hiệu' },
+      { group: 'Khám bệnh & Cấp cứu', name: 'Trần Hải Triều', role: 'Điều dưỡng phụ trách', dept: 'Khoa Khám bệnh', badge: 'Quản lý Hàng đợi & Chỉ báo Xanh trên HIS' },
+      { group: 'Khám bệnh & Cấp cứu', name: 'Nguyễn Phương Nam', role: 'Điều dưỡng phụ trách', dept: 'Khoa Khám bệnh', badge: 'Điều hướng Người bệnh Sau Cận lâm sàng' },
+      { group: 'Khám bệnh & Cấp cứu', name: 'Phạm Vũ Linh', role: 'Điều dưỡng phụ trách', dept: 'Phòng Cấp cứu', badge: 'Chốt chặn Báo động đỏ (Red Code) & EWS' },
+      { group: 'Khám bệnh & Cấp cứu', name: 'Bùi Mỹ Diện', role: 'Điều dưỡng phụ trách', dept: 'Phòng Tiêm ngừa', badge: 'Phân luồng Dịch vụ & Trải nghiệm Khách hàng' },
+
+      { group: 'Cận lâm sàng & Dược', name: 'Đào Văn Khuynh', role: 'Bác sĩ phụ trách', dept: 'Phòng Nội soi', badge: 'Đồng chủ trì Chuyên môn Đề án 1 & Fast-track' },
+      { group: 'Cận lâm sàng & Dược', name: 'Lê Như Ý', role: 'Điều dưỡng phụ trách', dept: 'Phòng Nội soi', badge: 'Quy trình Khử khuẩn & Chuẩn bị Người bệnh' },
+      { group: 'Cận lâm sàng & Dược', name: 'Trương Chí Toại', role: 'Trưởng khoa', dept: 'Khoa Chẩn đoán hình ảnh', badge: 'Phát hành Kết quả Liên tục (Single-piece flow)' },
+      { group: 'Cận lâm sàng & Dược', name: 'Phạm Kiều Trang', role: 'Điều dưỡng trưởng', dept: 'Khoa Chẩn đoán hình ảnh', badge: 'Bàn giao Kết quả Siêu âm / X-Quang' },
+      { group: 'Cận lâm sàng & Dược', name: 'Ngô Bảo Trọng', role: 'Kỹ thuật viên trưởng', dept: 'Khoa Chẩn đoán hình ảnh', badge: 'Kiểm soát Thời gian Chụp & PACS' },
+      { group: 'Cận lâm sàng & Dược', name: 'Lê Minh Mẫn', role: 'Trưởng phòng', dept: 'Phòng Xét nghiệm', badge: 'Chủ quy trình Xét nghiệm & Critical Value Alert' },
+      { group: 'Cận lâm sàng & Dược', name: 'Mai Duy Linh', role: 'Phó phòng', dept: 'Phòng Xét nghiệm', badge: 'Rút ngắn TAT Xét nghiệm & Giám sát LIS' },
+      { group: 'Cận lâm sàng & Dược', name: 'Trần Văn Thơi', role: 'Phó khoa', dept: 'Khoa Dược', badge: 'Cấp phát Thuốc Tinh gọn & Bàn giao Đơn thuốc' },
+
+      { group: 'Khách hàng & Vận hành', name: 'Huỳnh Trường Thanh Tâm', role: 'Phó phòng', dept: 'Phòng Phát triển khách hàng', badge: 'Đồng điều phối Dự án, Khảo sát PX & Care Navigator' },
+      { group: 'Khách hàng & Vận hành', name: 'Tạ Minh Phước', role: 'Tổ trưởng', dept: 'Phòng Phát triển khách hàng', badge: 'Chăm sóc Người bệnh & Đảo nhịp Sáng - Chiều' },
+      { group: 'Khách hàng & Vận hành', name: 'Lữ Phú Sinh', role: 'Trưởng phòng', dept: 'Phòng Quản trị tòa nhà', badge: 'Biển bảng 5S, Ghế chờ & Cơ sở vật chất Sảnh' },
+
+      { group: 'Tổ chức & Tài chính', name: 'Trần Trúc Linh', role: 'Trưởng phòng', dept: 'Phòng Tổ chức nhân sự', badge: 'Chủ nhiệm Đề án 3 (Khung Năng lực 5T & Bậc thang)' },
+      { group: 'Tổ chức & Tài chính', name: 'Nguyễn Như Ý', role: 'Trưởng phòng', dept: 'Phòng Tài chính kế toán', badge: 'Phân tích ROI, Hiệu quả Chi phí & Thu ngân' },
+      { group: 'Tổ chức & Tài chính', name: 'Nguyễn Thúy Kiều', role: 'Tổ trưởng kế toán thu', dept: 'Phòng Tài chính kế toán', badge: 'Rút ngắn Thời gian Thu ngân & Xuất Hóa đơn' },
+
+      { group: 'Ban Điều phối Nhóm 8', name: 'Nguyễn Kim Nhang', role: 'Nhóm trưởng Nhóm 8', dept: 'Phòng TCNS CS2', badge: 'Tổng chỉ huy Nhóm 8 & Giảng dạy Phương pháp FMFT' },
+      { group: 'Ban Điều phối Nhóm 8', name: 'Nguyễn Hoàng Duy', role: 'Hỗ trợ nhóm trưởng', dept: 'Tổ CNTT CS2', badge: 'Hỗ trợ Kỹ thuật & Kết nối Hệ thống' },
+      { group: 'Ban Điều phối Nhóm 8', name: 'Lục Thị Yến Nhi', role: 'Thành viên BKS', dept: 'Ban Kiểm soát Hệ thống', badge: 'Kiểm toán Chỉ số KPI & Đo lường Tuân thủ' }
+    ];
+
+    /* ==========================================================================
+       THEME MANAGEMENT
+       ========================================================================== */
+    const htmlEl = document.documentElement;
+    const themeBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    function applyTheme(t) {
+      htmlEl.setAttribute('data-theme', t);
+      localStorage.setItem('tvm_cs3_theme', t);
+      if (themeIcon) themeIcon.textContent = (t === 'dark') ? '☀️' : '🌙';
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: false,
+          securityLevel: 'loose',
+          theme: (t === 'dark') ? 'dark' : 'default'
+        });
+      }
+    }
+
+    const savedTheme = localStorage.getItem('tvm_cs3_theme') || 'light';
+    applyTheme(savedTheme);
+
+    themeBtn.addEventListener('click', () => {
+      const current = htmlEl.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+      const activeTab = location.hash.slice(1) || 'da1';
+      showDoc(activeTab);
+    });
+
+    /* Presentation mode */
+    const presBtn = document.getElementById('presentation-toggle');
+    const exitPresBtn = document.getElementById('exit-pres-btn');
+    function togglePresentation() {
+      document.body.classList.toggle('presentation-mode');
+    }
+    presBtn.addEventListener('click', togglePresentation);
+    exitPresBtn.addEventListener('click', togglePresentation);
+
+    /* ==========================================================================
+       FAIL-PROOF FILE FETCHING
+       ========================================================================== */
+    async function fetchDocContent(file) {
+      const candidates = [
+        file,
+        './' + file,
+        'cs3/' + file,
+        '../' + file
+      ];
+      for (const p of candidates) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) return await res.text();
+        } catch (e) {}
+      }
+      throw new Error('Không thể tải tệp ' + file);
+    }
+
+    /* ==========================================================================
+       ROSTER RENDERING (TAB 5)
+       ========================================================================== */
+    function renderRoster(filterGroup = 'ALL') {
+      const groups = ['ALL', 'Ban Giám đốc CS3', 'KHTH & CNTT', 'Khám bệnh & Cấp cứu', 'Cận lâm sàng & Dược', 'Khách hàng & Vận hành', 'Tổ chức & Tài chính', 'Ban Điều phối Nhóm 8'];
+      
+      const filtered = (filterGroup === 'ALL') 
+        ? CS3_PERSONNEL 
+        : CS3_PERSONNEL.filter(p => p.group === filterGroup);
+
+      let html = `
+        <div class="roster-header">
+          <h1>DANH BẠ 26 NHÂN SỰ CƠ SỞ 3 & BAN ĐIỀU PHỐI THỰC HIỆN</h1>
+          <p style="color:var(--text-sub); font-size:14px; margin-top:4px;">
+            Cơ sở thực hiện: Phòng khám Đa khoa Thanh Vũ Medic Cà Mau (Cơ sở 3) · Chương trình Quản trị Bệnh viện FMFT AIOS/LSE.
+          </p>
+        </div>
+
+        <div class="roster-filter-bar">
+          ${groups.map(g => `
+            <button class="roster-filter-btn ${g === filterGroup ? 'active' : ''}" onclick="renderRoster('${g}')">
+              ${g === 'ALL' ? 'Tất cả (29 thành viên)' : g}
+            </button>
+          `).join('')}
+        </div>
+
+        <div class="roster-grid">
+          ${filtered.map(p => `
+            <div class="member-card ${p.isLeader ? 'leader' : ''}">
+              <div>
+                <div class="member-header">
+                  <div class="member-name">${p.name}</div>
+                  <span class="member-group-tag">${p.group}</span>
+                </div>
+                <div class="member-role">${p.role}</div>
+                <div class="member-dept">${p.dept}</div>
+              </div>
+              <div class="member-badge">${p.badge}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      const docBox = document.getElementById('doc-content');
+      docBox.innerHTML = html;
+      buildTOCFromRoster();
+      window.scrollTo(0, 0);
+    }
+
+    function buildTOCFromRoster() {
+      const list = document.getElementById('toc-list');
+      const countEl = document.getElementById('toc-count');
+      if (!list) return;
+      list.innerHTML = '';
+      const groups = ['Ban Giám đốc CS3', 'KHTH & CNTT', 'Khám bệnh & Cấp cứu', 'Cận lâm sàng & Dược', 'Khách hàng & Vận hành', 'Tổ chức & Tài chính', 'Ban Điều phối Nhóm 8'];
+      groups.forEach(g => {
+        const li = document.createElement('li');
+        li.className = 'toc-item h2';
+        li.innerHTML = `<a href="javascript:void(0)" onclick="renderRoster('${g}')">📌 ${g}</a>`;
+        list.appendChild(li);
+      });
+      if (countEl) countEl.textContent = groups.length + ' khối';
+    }
+
+    /* ==========================================================================
+       DOCUMENT RENDERING
+       ========================================================================== */
+    const tabsNav = document.getElementById('tabs-nav');
+    const docBox = document.getElementById('doc-content');
+
+    async function showDoc(id) {
+      const d = DOCS.find(x => x.id === id) || DOCS[0];
+      location.hash = d.id;
+
+      // Update tab active state
+      tabsNav.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.id === d.id);
+      });
+
+      if (d.isRoster) {
+        renderRoster('ALL');
+        return;
+      }
+
+      docBox.innerHTML = '<div style="padding:40px; text-align:center; color:var(--text-muted); font-size:15px;">⏳ Đang tải tài liệu...</div>';
+
+      try {
+        let md = await fetchDocContent(d.f);
+
+        // Configure marked
+        const renderer = new marked.Renderer();
+        const origTable = renderer.table.bind(renderer);
+        renderer.table = function(header, body) {
+          return '<div class="table-wrapper">' + origTable(header, body) + '</div>';
+        };
+
+        marked.setOptions({
+          renderer: renderer,
+          gfm: true,
+          breaks: true
+        });
+
+        docBox.innerHTML = marked.parse(md);
+
+        // Mermaid diagrams
+        const mermaidEls = docBox.querySelectorAll('pre code.language-mermaid');
+        mermaidEls.forEach(c => {
+          const pre = c.parentElement;
+          const div = document.createElement('div');
+          div.className = 'mermaid';
+          div.textContent = c.textContent;
+          pre.replaceWith(div);
+        });
+
+        try {
+          await mermaid.run({ nodes: docBox.querySelectorAll('.mermaid') });
+        } catch (me) {}
+
+        // KaTeX Math
+        renderMathInElement(docBox, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false }
+          ],
+          throwOnError: false
+        });
+
+        // Build Table of Contents
+        buildTOC();
+        window.scrollTo(0, 0);
+
+      } catch (err) {
+        docBox.innerHTML = `<div style="padding:30px; color:var(--c-red); font-weight:700;">⚠️ Lỗi: ${err.message}</div>`;
+      }
+    }
+
+    /* Build Table of Contents */
+    function buildTOC() {
+      const list = document.getElementById('toc-list');
+      const countEl = document.getElementById('toc-count');
+      if (!list) return;
+      list.innerHTML = '';
+
+      const headers = docBox.querySelectorAll('h1, h2, h3');
+      if (countEl) countEl.textContent = headers.length + ' mục';
+
+      headers.forEach((h, idx) => {
+        const id = 'sec-' + idx;
+        h.id = id;
+        const li = document.createElement('li');
+        li.className = 'toc-item ' + h.tagName.toLowerCase();
+        
+        const cleanText = h.textContent.replace(/^[#\s\d\.]+/, '').trim() || h.textContent;
+        li.innerHTML = `<a href="#${id}" title="${h.textContent}">${cleanText}</a>`;
+        
+        li.querySelector('a').onclick = (e) => {
+          e.preventDefault();
+          h.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.replaceState(null, null, '#' + location.hash.slice(1).split('&')[0]);
+        };
+        list.appendChild(li);
+      });
+    }
+
+    /* In-page TOC Search */
+    const tocSearch = document.getElementById('toc-search-input');
+    if (tocSearch) {
+      tocSearch.addEventListener('input', (e) => {
+        const q = e.target.value.toLowerCase().trim();
+        document.querySelectorAll('.toc-item').forEach(it => {
+          const match = it.textContent.toLowerCase().includes(q);
+          it.style.display = match ? 'block' : 'none';
+        });
+      });
+    }
+
+    /* Initialize tabs */
+    DOCS.forEach(d => {
+      const btn = document.createElement('button');
+      btn.className = 'tab-btn';
+      btn.dataset.id = d.id;
+      btn.innerHTML = `<span>${d.t}</span><span class="tab-badge">${d.badge}</span>`;
+      btn.onclick = () => showDoc(d.id);
+      tabsNav.appendChild(btn);
+    });
+
+    // Start with hash or first tab
+    const initialTab = location.hash.slice(1) || 'da1';
+    showDoc(initialTab);
+  </script>
+</body>
+</html>
